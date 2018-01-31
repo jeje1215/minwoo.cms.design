@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script><!-- ie10-viewport-bug-workaround.js -->
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script><!-- holder.js -->
+<link rel="stylesheet"    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+</head>
+<style>
+@import "../res/css/user/03.css";
+</style>
+<body>
+	<div class="box">
+		<form action="" id="loginForm">
+			<h3>아이디 찾기</h3>
+			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-user"></i></span> <input class="form-control"
+					type="text" name='name' placeholder="NAME" />
+			</div>
+			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-envelope"></i></span> <input
+					class="form-control" id="inputEmail" type="email" autofocus
+					required placeholder="이메일" />
+			</div>
+
+<!-- 			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-lock"></i></span> <input class="form-control"
+					type="password" name='Password' placeholder="password" />
+			</div> -->
+			<div class="form-group text-center">
+				<a href="../main.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+				<div class="form-group">
+					<button type="button" class="btn btn-def btn-block"
+						 data-toggle="modal" data-target="#myModal" style="background-color: #0084cd" >ID 찾기</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	
+	<div class="box">
+		<form action="" id="loginForm">
+			<h3>비밀번호 찾기</h3>
+			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-user"></i></span> <input class="form-control"
+					type="text" name='ID' placeholder="ID" />
+			</div>
+			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-envelope"></i></span> <input
+					class="form-control" id="inputEmail" type="email" autofocus
+					required placeholder="이메일" />
+			</div>
+
+<!-- 			<div class="form-group input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-lock"></i></span> <input class="form-control"
+					type="password" name='Password' placeholder="password" />
+			</div> -->
+			<div class="form-group text-center">
+				<a href="../main.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+				<div class="form-group">
+					<button type="button" class="btn btn-def btn-block"
+						style="background-color: #0084cd"data-toggle="modal" data-target="#myModal2">PW 찾기</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content" style="background-color:sd;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p>아이디:asdf 입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+   <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content" style="background-color:sd;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p>비밀번호 1234 입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+</body>
+</html>

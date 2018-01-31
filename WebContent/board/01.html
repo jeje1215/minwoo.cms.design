@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+@import "../res/css/board/01.css";
+</style>
+
+<script>
+$(function(){
+	$("#accordian h3").click(function(){
+		$("#accordian ul ul").slideUp();
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})         
+
+</script>
+
+<body>
+<header>
+	<img style="width: 300px; height: 95px; margin-left: 39%; "
+    src="../res/img/logo.png">
+
+	<nav class="navbar navbar-default navbar-fixed">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#"><span
+					class="glyphicon glyphicon-home"> HOME </span></a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-heart"><b>
+							MYPAGE </b></span></a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-cog"><b>
+							SETTING </b></span></a></li>
+<!-- 			<li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
+							CONTACT </b></span> </a></li> -->
+		</ul>
+</nav>
+</header>
+
+<nav class="aside">
+<div class="profile">
+      <div class="pricing-table pricing-three-column row">
+          <div class="plan col-sm-4 col-lg-4">
+             <div class="plan-name-bronze">
+                <img src="../res/img/pro.jpg" style="width: 90px; height:90px">
+               <h5><i class="fa fa-child" aria-hidden="true" style="float:center"></i> 남승창님!</h5>
+                  <p>CMS에오신것을환영합니다.</p>
+          
+          </div>
+          <ul class="pro">
+            <li class="plan-feature"><i class="fa fa-calendar" aria-hidden="true"></i> 가입일: </li>
+            <li class="plan-feature"><i class="fa fa-line-chart" aria-hidden="true"></i> 회원등급: </li>
+            <li class="plan-feature"><i class="fa fa-comments-o" aria-hidden="true"></i> 게시글: </li>
+           <div class="row">
+                  <button type="button" class="btn btn-default" style="width: 80px;"><i class="fa fa-paw" aria-hidden="true"></i>MyPage</button>
+                  <button type="button" class="btn btn-default"
+                     style="background-color: #ffc4d7 ;width: 80px;"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout</button>
+               </div>
+                </ul>
+       </div>
+    </div>
+    </div>
+
+<div id="accordian">
+	<ul>
+		<li class="active">
+			<h3> 공지사항</h3>
+			<ul>
+				<li><a href="#">게시판공지사항</a></li>
+			</ul>
+		</li>
+		<li >
+			<h3>연예 게시판<span class="plus">+</span></h3>
+			<ul>
+				<li><a href="#">방탄소년단</a></li>
+				<li><a href="#">트와이스</a></li>
+				<li><a href="#"></a></li>	
+			</ul>
+		</li>
+		<li>
+			<h3>시사 게시판 <span class="plus">+</span></h3>
+			<ul>
+				<li><a href="#">경제</a></li>
+				<li><a href="#">사회</a></li>
+				<li><a href="#">문화</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3>게임 게시판 <span class="plus">+</span></h3>
+			<ul>
+				<li><a href="#">배틀그라운</a></li>
+				<li><a href="#">오버워치</a></li>
+				<li><a href="#">스타크래프트</a></li>			
+			</ul>
+		</li>
+	</ul>
+</div>
+				<div class="ad">
+					<iframe id="da_iframe_below" name="da_iframe_below"
+						src="https://nv.veta.naver.com/fxshow?su=SU10082&nrefreshx=0"
+						data-veta-preview="main_below" width="200" height="130"
+						marginheight="0" marginwidth="0" scrolling="no" frameborder="0"
+						align="center" title="광고"></iframe>
+					<div class="veta_bdt"></div>
+					<div class="veta_bdr"></div>
+					<div class="veta_bdb"></div>
+					<div class="veta_bdl"></div>
+				</div>
+
+
+
+
+	</div>
+</form>
+
+
+</nav>
+
+	 <section id="post">
+      <div class="container">
+         <br>
+
+         <table class="table table-hover">
+            <caption>공지사항</caption>
+            <tr>
+               <td>등록일:2018-01-29</td>
+            </tr>
+            <thead>
+               <tr>
+                  <th>번호</th>
+                  <th class="title">제목</th>
+                  <th>작성자</th>
+                  <th style="color: #EA990B;">날짜</th>
+                  <th style="color: #EA990B;"><b>조회수</b></th>
+               </tr>
+            </thead>
+            <tbody>
+               <select name="category">
+                  <option value="">분류선택</option>
+                  <option value="공지사항">공지사항</option>
+                  <option value="일반">일반</option>
+               </select>
+            </tbody>
+            <tfoot>
+               <td>제 목</td>
+               <td><input type=text name=title size=30></td>
+               </tr>
+               <tr>
+                  <td>작성자</td>
+                  <td><input type=text name=userName size=15 maxlength=15></td>
+               </tr>
+               <tr>
+                  <td>내 용</td>
+                  <td><textarea name=content rows="10" cols="100"></textarea></td>
+               </tr>
+               
+            
+                  <td>비밀번호</td>
+                  <td><input type=password name=password size=15 maxlength=15></td>
+               </tr>
+               
+               <tr>
+                  <td colspan="2"><div align="left">
+                        <input type="file" />
+                     </div></td>
+               </tr>
+            </tfoot>
+         </table>
+         <div class="form-group-right">
+            <div class="col-sm-12 text-right">
+               <button class="btn btn-primary" type="submit" onclick="javascript:location.href='./04.html'">
+               등록<i class="fa fa-check spaceLeft"></i>
+               </button>
+               <button class="btn btn-danger" onclick="javascript:location.href='./04.html'">
+                  취소<i class="fa fa-times spaceLeft"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+</body>
+</html>

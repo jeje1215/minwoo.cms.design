@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet"
+   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script
+   src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script>
+<!-- ie10-viewport-bug-workaround.js -->
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script>
+<!-- holder.js -->
+<link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+@import "../res/css/manmember/01.css";
+</style>
+<script>
+   $(function() {
+      $("#accordian h3").click(function() {
+         $("#accordian ul ul").slideUp();
+         if (!$(this).next().is(":visible")) {
+            $(this).next().slideDown();
+         }
+      })
+   })
+</script>
+
+<body>
+   <header>
+      <img style="width: 300px; height: 95px; margin-left: 39%;"
+         src="../res/img/logo.png">
+
+      <nav class="navbar navbar-default navbar-fixed">
+         <ul class="nav navbar-nav">
+            <li><a href="#"><span class="glyphicon glyphicon-home">
+                     HOME </span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"><b>
+                        MYPAGE </b></span></a></li>
+            <li class="active"><a href="#"><span
+                  class="glyphicon glyphicon-cog"><b> SETTING </b></span></a></li>
+            <!--          <li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
+                     CONTACT </b></span> </a></li> -->
+         </ul>
+      </nav>
+   </header>
+
+   <nav class="aside">
+
+      <div class="profile">
+         <div class="pricing-table pricing-three-column row">
+            <div class="plan col-sm-4 col-lg-4">
+               <div class="plan-name-bronze">
+                  <img src="../res/img/pro.jpg" style="width: 90px; height: 90px">
+                  <h5>
+                     <i class="fa fa-child" aria-hidden="true" style="float: center"></i>
+                     관리자님!
+                  </h5>
+                  <p>CMS 관리해주세요.</p>
+
+               </div>
+               <ul class="pro">
+                  <li class="plan-feature"><i class="fa fa-calendar"
+                     aria-hidden="true"></i> 가입일:</li>
+                  <li class="plan-feature"><i class="fa fa-line-chart"
+                     aria-hidden="true"></i> 회원등급:</li>
+                  <li class="plan-feature"><i class="fa fa-comments-o"
+                     aria-hidden="true"></i> 게시글:</li>
+                  <div class="row">
+                     <button type="button" class="btn btn-default"
+                        style="width: 80px;">
+                        <i class="fa fa-paw" aria-hidden="true"></i>MyPage
+                     </button>
+                     <button type="button" class="btn btn-default"
+                        style="background-color: #ffc4d7; width: 80px;">
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout
+                     </button>
+                  </div>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="accordian">
+         <ul>
+            <li class="active">
+               <h3>게시판관리</h3>
+            </li>
+            <li>
+               <h3>
+                  회원관리<span class="plus">+</span>
+               </h3>
+               <ul>
+                  <li><a href="#">회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                  <li><a href="#"></a></li>
+               </ul>
+            </li>
+            <li>
+               <h3 onclick="javascript:location.href='../stats/01.html'">
+                  접속통계 <span class="plus">+</span>
+               </h3>
+               <ul>
+                  <li><a href="#">경제</a></li>
+                  <li><a href="#">사회</a></li>
+                  <li><a href="#">문화</a></li>
+               </ul>
+            </li>
+            <li>
+               <h3>
+                  광고등록 <span class="plus">+</span>
+               </h3>
+               <ul>
+                  <li><a href="#">광고등록</a></li>
+                  <li><a href="#">광고관리</a></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+
+   </nav>
+   <section id="post">
+      <div class="container">
+         <div class="name">
+            <i class="fa fa-users" aria-hidden="true"></i> 회원관리
+         </div>
+         <br>
+         <div class="d1">
+            <select class="click">
+               <option value="">번호</option>
+               <option value="제목">제목</option>
+               <option value="날짜">날짜</option>
+               <option value="조회수">조회수</option>
+            </select>
+
+            <div class="form">
+               <input type="text" placeholder="검색어 입력">
+               <button type="submit" class="1"></button>
+            </div>
+            <br> <br>
+         </div>
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary">회원등급변경</button>
+            <button type="button" class="btn btn-primary dropdown-toggle"
+               data-toggle="dropdown">
+               <span class="caret"></span> 선택
+            </button>
+            <ul class="dropdown-menu">
+               <li><a href="#">푸들</a></li>
+               <li><a href="#">불독</a></li>
+            </ul>
+         </div>
+         <br> <br>
+
+
+         <table class="table table-hover">
+            <thead>
+               <tr>
+                  <td></td>
+                  <th>닉네임(아이디)</th>
+                  <th class="title">이름</th>
+                  <th>이메일</th>
+                  <th style="color: #EA990B;">등급</th>
+                  <!--                   <th style="color: #EA990B;"><b>조회수</b></th> -->
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>나나(apfhd)</td>
+                  <td>홍길동</td>
+                  <td>7772@naver.com</td>
+                  <td>푸들</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>승창이(apfhd)</td>
+                  <td>김연아</td>
+                  <td>8888@naver.com</td>
+                  <td>푸들</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>승창이전여친(apfhd)</td>
+                  <td>수지</td>
+                  <td>1112@naver.com</td>
+                  <td>요크셔테리어</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>나나(apfhd)</td>
+                  <td>홍길동</td>
+                  <td>7772@naver.com</td>
+                  <td>포메리안</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>나나(apfhd)</td>
+                  <td>홍길동</td>
+                  <td>7772@naver.com</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>나나(apfhd)</td>
+                  <td>홍길동</td>
+                  <td>7772@naver.com</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="cb1" name="index" /></td>
+                  <td>이시대의카사노바(apfhd)</td>
+                  <td>남승창</td>
+                  <td>tttt@naver.com</td>
+                  <td>불독</td>
+               </tr>
+            </tbody>
+         </table>
+         <button class="del" data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-trash-o" aria-hidden="true"></i> 변경
+         </button>
+      </div>
+
+      <br> <br>
+      <div class="text-center">
+         <ul class="pagination">
+            <li class="disabled"><a href="#"><span
+                  class="glyphicon glyphicon-chevron-left"></span></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="active"><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#"><span
+                  class="glyphicon glyphicon-chevron-right"></span></a></li>
+         </ul>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">변경되었습니다.</h4>
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" class="close"
+                     data-dismiss="modal">확인</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+</body>
+</html>

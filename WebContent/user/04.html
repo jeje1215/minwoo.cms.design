@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script><!-- ie10-viewport-bug-workaround.js -->
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script><!-- holder.js -->
+<style>
+@import "../res/css/user/04.css";
+</style>
+<script>
+	$(function() {
+		$("#accordian h3").click(function() {
+			$("#accordian ul ul").slideUp();
+			if (!$(this).next().is(":visible")) {
+				$(this).next().slideDown();
+			}
+		})
+	})
+</script>
+
+<body>
+	<header>
+		<img style="width: 300px; height: 95px; margin-left: 39%;"
+			src="../res/img/logo.png">
+
+		<nav class="navbar navbar-default navbar-fixed">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home">
+							HOME </span></a></li>
+				<li class="active"><a href="#"><span
+						class="glyphicon glyphicon-heart"><b> MYPAGE </b></span></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-cog"><b>
+								SETTING </b></span></a></li>
+<!-- 				<li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
+								CONTACT </b></span> </a></li> -->
+			</ul>
+		</nav>
+	</header>
+
+	<nav class="aside">
+
+		<div class="profile">
+			<div class="pricing-table pricing-three-column row">
+				<div class="plan col-sm-4 col-lg-4">
+					<div class="plan-name-bronze">
+						<img src="../res/img/pro.jpg" style="width: 90px; height: 90px">
+						<h5>
+							<i class="fa fa-child" aria-hidden="true" style="float: center"></i>
+							남승창님!
+						</h5>
+						<p>CMS에오신것을환영합니다.</p>
+
+					</div>
+					<ul class="pro">
+						<li class="plan-feature"><i class="fa fa-calendar"
+							aria-hidden="true"></i> 가입일:</li>
+						<li class="plan-feature"><i class="fa fa-line-chart"
+							aria-hidden="true"></i> 회원등급:</li>
+						<li class="plan-feature"><i class="fa fa-comments-o"
+							aria-hidden="true"></i> 게시글:</li>
+						<div class="row">
+							<button type="button" class="btn btn-default"
+								style="width: 80px;">
+								<i class="fa fa-paw" aria-hidden="true"></i>MyPage
+							</button>
+							<button type="button" class="btn btn-default"
+								style="background-color: #ffc4d7; width: 80px;">
+								<i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout
+							</button>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="accordian">
+			<ul>
+				<li class="active">
+					<h3>회원정보</h3>
+					<ul>
+						<li><a href="#" onclick="javascript:location.href='./06.html'">메세지함</a></li>
+					</ul>
+				</li>
+		</div>
+
+	</nav>
+
+	<section id="post">
+		<div class="container">
+			<div class="col-md-12" style="font-family: HY강B";>
+				<div class="page-header">
+					<h3>회원정보수정</h3>
+				</div>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputId">ID</label>
+						<div class="col-sm-6">
+							loginId
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputEmail">이메일</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputEmail" type="email" required
+								placeholder="이메일">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputPassword">비밀번호</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputPassword" type="password"
+								required placeholder="비밀번호">
+							<p class="help-block">숫자, 특수문자 포함 8자 이상</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputPasswordCheck">비밀번호
+							확인</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputPasswordCheck"
+								type="password" required placeholder="비밀번호 확인">
+							<p class="help-block">비밀번호를 한번 더 입력해주세요.</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputName">이름</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputName" type="text" required
+								placeholder="이름">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputNicname">닉네임</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputNicname" type="text" required
+								placeholder="닉네임">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputBirth">생년월일</label>
+						<div class="col-sm-6">
+							<input class="form-control" id="inputBirth" type="date" required
+								placeholder="생년월일">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputAgree">약관
+							동의</label>
+						<div class="col-sm-6" data-toggle="buttons">
+							<label class="btn btn-warning active"> <input id="agree"
+								type="checkbox" autocomplete="off" chacked required> <span
+								class="fa fa-check"></span>
+							</label> <a href="#">이용약관</a> 에 동의 합니다.
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12 text-center">
+							<button class="btn btn-primary" type="submit" data-toggle="modal"
+						data-target="#myModal3">
+								회원탈퇴<i class="fa fa-check spaceLeft"></i>
+							</button>
+							<button class="btn btn-danger" type="submit" data-toggle="modal"
+						data-target="#myModal4">
+								회원수정<i class="fa fa-times spaceLeft"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+
+		</div>
+	</section>
+	   <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      
+         </div>
+         <div class="modal-body">
+			회원 탈퇴 하시겠습니까?
+         </div>
+         <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:location.href='../main.html'">확인</button>
+      <button type="button" class="btn btn-primary"  data-dismiss="modal" >취소</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   
+      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      
+         </div>
+         <div class="modal-body">
+      	수정 되었습니다.
+         </div>
+         <div class="modal-footer">
+
+      <button type="button" class="btn btn-primary"  data-dismiss="modal" >확인</button>
+         </div>
+       </div>
+     </div>
+   </div>
+	
+	
+
+
+
+</body>
+</html>
