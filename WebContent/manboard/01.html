@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet"type = "text/css" href="Copy of test1.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<script    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script defer src="/static/fontawesome/fontawesome-all.js"></script>
-<script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script
+   src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script>
+<!-- ie10-viewport-bug-workaround.js -->
+<script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script>
+<!-- holder.js -->
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <style>
 @import "../res/css/manboard/01.css";
@@ -39,8 +43,8 @@ $(function(){
                      MYPAGE </b></span></a></li>
          <li class="active"><a href="#"><span class="glyphicon glyphicon-cog"><b>
                      SETTING </b></span></a></li>
-         <li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
-                     CONTACT </b></span> </a></li>
+<!--          <li><a href="#"><span class="glyphicon glyphicon-earphone"><b> -->
+<!--                      CONTACT </b></span> </a></li> -->
       </ul>
 </nav>
 </header>
@@ -71,13 +75,13 @@ $(function(){
     </div>
 
 
-<div class="a">
-   <h3>오늘 개소식!</h3>
-   <a href="#">New <span class="badge">5</sapn></a><br>
-   <a href="#">은빈이 남친 사귄 횟수<span class="badge">10</sapn></a><br>
-   <a href="#">updates<span class="badge">2</sapn></a><br>
+<!-- <div class="a"> -->
+<!--    <h3>오늘 개소식!</h3> -->
+<!--    <a href="#">New <span class="badge">5</sapn></a><br> -->
+<!--    <a href="#">은빈이 남친 사귄 횟수<span class="badge">10</sapn></a><br> -->
+<!--    <a href="#">updates<span class="badge">2</sapn></a><br> -->
             
-</div>
+<!-- </div> -->
       
       <div id="accordian">
          <ul>
@@ -85,7 +89,7 @@ $(function(){
                <h3>게시판 관리</h3>
             </li>
             <li>
-               <h3>
+               <h3 onclick="javascript:location.href='../manmember/01.html'">
                   회원 관리<span class="plus">+</span>
                </h3>
                <ul>
@@ -183,46 +187,105 @@ $(function(){
                <td><input type="radio" name="memory" value="1">공개 <input
                   type="radio" name="memory" value="2">비공개<br></td>
             </tr>
-            <tr>
-               <td>글쓰기 권한</td>
-               <td><select name="category">
-                     <option value="">분류선택</option>
-                     <option value="일반">나만 쓰는 게시판</option>
-                     <option value="일반">공용 게시판</option>
-               </select></td>
-            <tr>
-               <td>카테고리 정렬></td>
+<!--             <tr> -->
+<!--                <td>글쓰기 권한</td> -->
+<!--                <td><select name="category"> -->
+<!--                      <option value="">분류선택</option> -->
+<!--                      <option value="일반">나만 쓰는 게시판</option> -->
+<!--                      <option value="일반">공용 게시판</option> -->
+<!--                </select></td> -->
+<!--             <tr> -->
+               <td>카테고리 정렬 ▶</td>
                <td><button id="up">위</button>
                   <button id="down">아래</button>
-                  <button id="left">왼쪽</button>
-                  <button id="right">오른쪽</button></td>
+<!--                   <button id="left">왼쪽</button> -->
+<!--                   <button id="right">오른쪽</button>  --></td>
             </tr>
-            <tr>
-               <td>카테고리 접기</td>
-               <td><input type="radio" name="show" value="1">펼치기 <input
-                  type="radio" name="show" value="2">접기<br></td>
-            </tr>
+<!--             <tr> -->
+<!--                <td>카테고리 접기</td> -->
+<!--                <td><input type="radio" name="show" value="1">펼치기 <input -->
+<!--                   type="radio" name="show" value="2">접기<br></td> -->
+<!--             </tr> -->
          </table>
       </div>
    
       
       <div class="form-group">
             <div class="col-sm-12 text-right">
-               <button class="btn btn-primary" type="submit">
+               <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">
                   확인 <i class="fa fa-check spaceLeft"></i>
                </button>
-                <button class="btn btn-warning" type="submit">
+                <button class="btn btn-warning" type="submit" data-toggle="modal" data-target="#myModal2">
               <i class="fas fa-sync-alt"></i> 수정
                   
                </button>
-               <button class="btn btn-danger" formaction="../main.html">
+               <button class="btn btn-danger" data-toggle="modal" data-target="#myModal3">
                   삭제 <i class="fa fa-times spaceLeft"></i>
                </button>
             </div>
          </div>
       </div>
       
+      
+      
+      
 
    </section>
+   
+         <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">등록되었습니다.</h4>
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">수정되었습니다.</h4>
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">삭제되었습니다.</h4>
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+   
 </body>
 </html>

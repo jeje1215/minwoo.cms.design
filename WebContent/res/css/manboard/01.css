@@ -2,7 +2,12 @@
 p{
    font-size:11px;
 }
-
+.modal-dialog{
+	
+	font-family:HY강B;
+ 	text-align:center;
+	
+}
 .pricing-table .plan {
    margin-left: 20px;
    border-radius: 5px;
