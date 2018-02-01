@@ -9,7 +9,13 @@ p{
  	text-align:center;
 	
 }
-
+footer{
+	
+	margin-top:100px;
+	font-family: HY강B;
+	font-size:11px;
+	
+}
 
 .container {
     padding-right: 150px;
@@ -231,15 +237,14 @@ table#yuri{
 
 .btn-primary:hover {
 	border: 1px solid #1689b9;
-	background-color: #1689b9;
+	
 }
 
 .btn-primary {
-	background-color: #286BF7;
+		font-family: HY강B;
 	border-radius: 10px;
 	color: wihte;
-	text-decoration: none;
-	border: 1px solid #286BF7;
+
 }
 
 .pagination {

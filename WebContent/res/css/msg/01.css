@@ -12,6 +12,14 @@ div.box {
 	border: 5px solid #f1f1f1
 }
 
+footer{
+	
+	margin-top:100px;
+	font-family: HY강B;
+	font-size:11px;
+	
+}
+
 div.letterpage {
 	width: 490px;
 	height: 480px;

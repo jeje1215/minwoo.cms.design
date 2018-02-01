@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="Copy of test1.css">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//variancecharts.com/cdn/variance-noncommercial-standalone-f47ffcf.min.js" charset="UTF-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<link id="traffic" rel="variance-data" href="//variancecharts.com/data/traffic.csv">	
+	
+</head>
+<style>
+@import "../res/css/stats/03.css";
+</style>
+<script>
+	$(function() {
+		$("#accordian h3").click(function() {
+			$("#accordian ul ul").slideUp();
+			if (!$(this).next().is(":visible")) {
+				$(this).next().slideDown();
+			}
+		})
+	})
+	
+</script>
+
+<body>
+	<header>
+		<img style="width: 300px; height: 95px; margin-left: 39%;"
+			src="../res/img/logo.png">
+
+		<nav class="navbar navbar-default navbar-fixed">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home">
+							HOME </span></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-heart"><b>
+								MYPAGE </b></span></a></li>
+				<li class="active"><a href="#"><span
+						class="glyphicon glyphicon-cog"><b> SETTING </b></span></a></li>
+				<!--             <li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
+                        CONTACT </b></span> </a></li> -->
+			</ul>
+		</nav>
+	</header>
+
+	<nav class="aside">
+
+		<div class="profile">
+			<div class="pricing-table pricing-three-column row">
+				<div class="plan col-sm-4 col-lg-4">
+					<div class="plan-name-bronze">
+						<img src="../res/img/pro.jpg" style="width: 90px; height: 90px">
+						<h5>
+							<i class="fa fa-child" aria-hidden="true" style="float: center"></i>
+							남승창님!
+						</h5>
+						<p>CMS에오신것을환영합니다.</p>
+
+					</div>
+					<ul class="pro">
+						<li class="plan-feature"><i class="fa fa-calendar"
+							aria-hidden="true"></i> 가입일:</li>
+						<li class="plan-feature"><i class="fa fa-line-chart"
+							aria-hidden="true"></i> 회원등급:</li>
+						<li class="plan-feature"><i class="fa fa-comments-o"
+							aria-hidden="true"></i> 게시글:</li>
+						<div class="row">
+							<button type="button" class="btn btn-default"
+								style="width: 80px;">
+								<i class="fa fa-paw" aria-hidden="true"></i>MyPage
+							</button>
+							<button type="button" class="btn btn-default"
+								style="background-color: #ffc4d7; width: 80px;">
+								<i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout
+							</button>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="accordian">
+			<ul>
+				<li class="active">
+					<h3>게시판관리</h3>
+				</li>
+				<li>
+					<h3>
+						회원 관리<span class="plus">+</span>
+					</h3>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>
+						접속 통계 <span class="plus">+</span>
+					</h3>
+					<ul>
+						<li><a href="#">일일 통계</a></li>
+						<li><a href="#">주간 통계</a></li>
+						<li><a href="#">월간 통계</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3 onclick="javascript:location='../manad/01.html';">
+						광고등록 <span class="plus">+</span>
+					</h3>
+					<ul>
+						<li><a href="#">광고등록</a></li>
+						<li><a href="#">광고관리</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+	<section id="post">
+<div class="container">
+  <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+  <div class="donut-chart-block block"> 
+                    <h2 class="titular">Annual statistics </h2>
+                    <div class="donut-chart">
+ <!-- PORCIONES GRAFICO CIRCULAR
+      ELIMINADO #donut-chart
+      MODIFICADO CSS de .donut-chart -->
+      <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+     <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+ <!-- FIN AÑADIDO GRÄFICO -->
+                            <p class="center-date">MAY<br><span class="scnd-font-color">2018</span></p>        
+                    </div>
+                    <ul class="os-percentages horizontal-list">
+                        <li>
+                            <p class="ios os scnd-font-color">가입자</p>
+                            <p class="os-percentage">21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="mac os scnd-font-color">접속자</p>
+                            <p class="os-percentage">39<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="linux os scnd-font-color">게시글</p>
+                            <p class="os-percentage">9<sup>%</sup></p>
+                        </li>
+                       </ul>
+                </div>
+ <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                <div class="line-chart-block block">
+     <div class="line-chart">
+       <div class='grafico'>
+       <ul class='eje-y'>
+         <li data-ejeY='30'></li>
+         <li data-ejeY='20'></li>
+         <li data-ejeY='10'></li>
+         <li data-ejeY='0'></li>
+       </ul>
+       <ul class='eje-x'>
+         <li>접속자</li>
+         <li>가입자</li>
+         <li>게시글</li>
+       </ul>
+         <span data-valor='25'>
+           <span data-valor='8'>
+             <span data-valor='13'>
+               <span data-valor='5'>   
+                 <span data-valor='23'>   
+                 <span data-valor='12'>
+                     <span data-valor='15'>
+                     </span></span></span></span></span></span></span>
+       </div>
+       
+     </div>
+                    <ul class="time-lenght horizontal-list">
+                        <li><a class="time-lenght-btn" href="#14">접속자</a></li>
+                        <li><a class="time-lenght-btn" href="#15">가입자</a></li>
+                        <li><a class="time-lenght-btn" href="#16">게시글</a></li>
+                    </ul>
+                    <ul class="month-data clear">
+                        <li>
+                            <p>접속자<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>가입자<span class="scnd-font-color"> 1233</span></p>
+                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>게시글<span class="scnd-font-color"> 3</span></p>
+                            <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+                
+
+  
+  <div class="bar-chart-block block">
+    <h2 class='titular'>주간통계<span>*1000</span></h2>
+    <div class='grafico bar-chart'>
+       <ul class='eje-y'>
+         <li data-ejeY='60'></li>
+         <li data-ejeY='45'></li>
+         <li data-ejeY='30'></li>
+         <li data-ejeY='15'></li>
+         <li data-ejeY='0'></li>
+       </ul>
+       <ul class='eje-x'>
+         <li data-ejeX='37'><i>접속자</i></li>
+         <li data-ejeX='56'><i>가입자</i></li>
+         <li data-ejeX='25'><i>게시글</i></li>
+         <li data-ejeX='18'><i>댓글</i></li>
+   
+       </ul>
+    </div>
+  </div>
+            </div>
+	</section>
+	
+	
+ 	<footer>
+
+		<center>
+			MinWoo.CMS
+			<p class="footer_text">이용약관 | 개인정보 취급방침 | 자주 묻는 질문</p>
+			<p>
+				Contact information: <a href="cmscom:someone@example.com">
+					someone@example.com</a>.
+			</p>
+			<p>주소 : 서울특별시 구로구 구로동 182-13  |  대표전화 : 02-1234-5678 </p>
+		
+		</center>
+	</footer>
+</body>
+</html>
+
+

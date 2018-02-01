@@ -8,6 +8,13 @@ p{
  	text-align:center;
 	
 }
+footer{
+	
+	margin-top:100px;
+	font-family: HY강B;
+	font-size:11px;
+	
+}
 .pricing-table .plan {
    margin-left: 20px;
    border-radius: 5px;

@@ -14,7 +14,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-@import "../res/css/manad/01.css";
+@import "../res/css/stats/02.css";
 </style>
 <script>
 	$(function() {
@@ -25,6 +25,19 @@
 			}
 		})
 	})
+	
+	
+function viewGraph(){
+$('.column').css('height','0');
+$('table tr').each(function(index) {
+var ha = $(this).children('td').eq(1).text();
+$('#col'+index).animate({height: ha}, 1500).html("<div>"+ha+"</div>");
+});
+}
+$(document).ready(function(){
+viewGraph();
+});
+	
 </script>
 
 <body>
@@ -122,56 +135,59 @@
 
 	</nav>
 	<section id="post">
-		<div class="container">
-			<br>
-			<h4>일일 통계</h4>
-			<hr>
-			<div class="progress">
-				<div class="progress-bar progress-bar-dagner" style="width: 30%">
-					접속자 20명</div>
+		<div id="contenitore">
+			<div class="left">
+				<table>
+					<caption>주간 통계</caption>
+					<tbody>
+						<tr>
+							<td>접속자</td>
+							<td>68%</td>
+							
+						</tr>
+						<tr>
+							<td>가입자</td>
+							<td>19%</td>
+						
+						</tr>
+						<tr>
+							<td>게시글</td>
+							<td>35%</td>
+						</tr>
+						<tr>
+							<td>관리자</td>
+							<td>20%</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="button" onclick="viewGraph()">자세히</div>
 			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" style="width: 13%">
-					가입자 5명</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 10%">
-					게시글 3개</div>
-			</div>
-			<h4>주간 통계</h4>
-			<hr>
-			<div class="progress">
-				<div class="progress-bar progress-bar-dagner" style="width: 68%">
-					접속자 68명</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" style="width: 19%">
-					가입자 19명</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 35%">
-					게시글 35개</div>
-			</div>
-			<h4>월간 통계</h4>
-			<hr>
-			<div class="progress">
-				<div class="progress-bar progress-bar-dagner" style="width: 75%">
-					접속자 172명</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" style="width: 40%">
-					가입자 35명</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 50%">
-					게시글 60개</div>
-			</div>
-		</div>
+			<div class="left">
+				<div id="grafico">
+					<div class="riga" style="top: 25%">
+						<div>68%</div>
+					</div>
+					<div class="riga" style="top: 50%">
+						<div>19%</div>
+					</div>
+					<div class="riga" style="top: 75%">
+						<div>35%</div>
+					</div>
+					<div id="col0" style="left: 0; background-color: #336699;"
+						class="column"></div>
+					<div id="col1" style="left: 25%; background-color: #003366;"
+						class="column"></div>
+					<div id="col2" style="left: 50%; background-color: #ff6600;"
+						class="column"></div>
+					<div id="col3" style="left: 75%; background-color: #ffcc00;"
+						class="column"></div>
+				</div>
+		
 	</section>
 	
 	
+ 
  	<footer>
-
 		<center>
 			MinWoo.CMS
 			<p class="footer_text">이용약관 | 개인정보 취급방침 | 자주 묻는 질문</p>
@@ -180,7 +196,6 @@
 					someone@example.com</a>.
 			</p>
 			<p>주소 : 서울특별시 구로구 구로동 182-13  |  대표전화 : 02-1234-5678 </p>
-		
 		</center>
 	</footer>
 </body>
