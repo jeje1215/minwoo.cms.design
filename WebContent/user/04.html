@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -57,13 +59,10 @@
 						<p>CMS에오신것을환영합니다.</p>
 
 					</div>
-					<ul class="pro">
-						<li class="plan-feature"><i class="fa fa-calendar"
-							aria-hidden="true"></i> 가입일:</li>
-						<li class="plan-feature"><i class="fa fa-line-chart"
-							aria-hidden="true"></i> 회원등급:</li>
-						<li class="plan-feature"><i class="fa fa-comments-o"
-							aria-hidden="true"></i> 게시글:</li>
+		<ul class="pro">
+            <li class="plan-feature"><i class="far fa-calendar-alt" aria-hidden="true"></i> 가입일: </li>
+            <li class="plan-feature"><i class="fas fa-chart-line" aria-hidden="true"></i> 회원등급: </li>
+            <li class="plan-feature"><i class="far fa-edit" aria-hidden="true"></i> 게시글: </li>
 						<div class="row">
 							<button type="button" class="btn btn-default"
 								style="width: 80px;" onclick="javascript:location.href='./04.html'">
@@ -71,7 +70,7 @@
 							</button>
 							<button type="button" class="btn btn-default"
 								style="background-color: #ffc4d7; width: 80px;" onclick="javascript:location.href='../main.html'">
-								<i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout
+								<i class="fas fa-sign-in-alt" aria-hidden="true"></i>Logout
 							</button>
 						</div>
 					</ul>
@@ -165,11 +164,11 @@
 						<div class="col-sm-12 text-center">
 							<button class="btn btn-primary" type="submit" data-toggle="modal"
 						data-target="#myModal3">
-								회원탈퇴<i class="fa fa-check spaceLeft"></i>
+								회원수정<i class="fa fa-check spaceLeft"></i>
 							</button>
 							<button class="btn btn-danger" type="submit" data-toggle="modal"
 						data-target="#myModal4">
-								회원수정<i class="fa fa-times spaceLeft"></i>
+								회원탈퇴<i class="fa fa-times spaceLeft"></i>
 							</button>
 						</div>
 					</div>
@@ -180,26 +179,10 @@
 
 		</div>
 	</section>
-	   <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-     <div class="modal-dialog">
-       <div class="modal-content">
-         <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-      
-         </div>
-         <div class="modal-body">
-			회원 탈퇴 하시겠습니까?
-         </div>
-         <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:location.href='../main.html'">확인</button>
-      <button type="button" class="btn btn-primary"  data-dismiss="modal" >취소</button>
-         </div>
-       </div>
-     </div>
-   </div>
+
    
    
-      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
      <div class="modal-dialog">
        <div class="modal-content">
          <div class="modal-header">
@@ -216,6 +199,29 @@
        </div>
      </div>
    </div>
+   
+   
+   
+     <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+      aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+               </button>
+
+            </div>
+            <div class="modal-body">회원 탈퇴 하시겠습니까?</div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal"
+                  onclick="javascript:location.href='../main.html'">확인</button>
+               <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
 	
 	 	<footer>
 

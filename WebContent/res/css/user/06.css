@@ -231,13 +231,7 @@ table {
 	background-color: #1689b9;
 }
 
-.btn-primary {
-	background-color: #286BF7;
-	border-radius: 10px;
-	color: wihte;
-	text-decoration: none;
-	border: 1px solid #286BF7;
-}
+
 
 .pagination {
 	display: block;
@@ -324,14 +318,9 @@ hr {
 	border: 1px solid #777777;
 }
 .btn-primary{
-background-color:#c0d6e4;
-color:black;
 
-border-radius: 0 3px 3px 0;
 	font-family: HY강B;
 	text-align: center;
-	height: 30px;
-	border:1px solid  #1a3547 ;
 	
 }
 
@@ -367,5 +356,10 @@ footer{
 	margin-top:100px;
 	font-family: HY강B;
 	font-size:11px;
+	
+}
+.name{
+	
+	margin-top:10px;
 	
 }
