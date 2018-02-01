@@ -41,11 +41,11 @@ function goPop(){
 
    <nav class="navbar navbar-default navbar-fixed">
       <ul class="nav navbar-nav">
-         <li class="active"><a href="#"><span
+         <li class="active"><a href="#" onclick="javascript:location.href='./04.html'"><span
                class="glyphicon glyphicon-home"> HOME </span></a></li>
          <li><a href="#" onclick="javascript:location.href='../user/04.html'"><span class="glyphicon glyphicon-heart"><b>
                      MYPAGE </b></span></a></li>
-         <li><a href="#"><span class="glyphicon glyphicon-cog"><b>
+         <li><a href="#" ><span class="glyphicon glyphicon-cog"><b>
                      SETTING </b></span></a></li>
 <!--          <li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
                      CONTACT </b></span> </a></li> -->
@@ -68,9 +68,12 @@ function goPop(){
             <li class="plan-feature"><i class="fa fa-line-chart" aria-hidden="true"></i> 회원등급: </li>
             <li class="plan-feature"><i class="fa fa-comments-o" aria-hidden="true"></i> 게시글: </li>
            <div class="row">
-                  <button type="button" class="btn btn-default" style="width: 80px;"><i class="fa fa-paw" aria-hidden="true"></i>MyPage</button>
-                  <button type="button" class="btn btn-default"
-                     style="background-color: #ffc4d7 ;width: 80px;"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout</button>
+                  <button type="button" class="btn btn-default" style="width: 80px;" 
+                  onclick="javascript:location.href='../user/04.html'">
+                  	<i class="fa fa-paw" aria-hidden="true"></i>MyPage</button>
+                  <button type="button" class="btn btn-default" style="background-color: #ffc4d7 ;width: 80px;" 
+                  onclick="javascript:location.href='../main.html'">
+                     	<i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout</button>
                </div>
                 </ul>
        </div>
@@ -160,21 +163,21 @@ function goPop(){
             <tbody>
                <tr>
                   <td>3</td>
-                  <td onclick="javascript:location.href='./02.html'">hello쀼삑</td>
+                  <td onclick="javascript:location.href='./02.html'" style="cursor:pointer;">hello쀼삑</td>
                   <td onclick="goPop();">승창</td>
                   <td>2018-01-09</td>
                   <td>10</td>
                </tr>
                <tr>
                   <td >2</td>
-                  <td onclick="javascript:location.href='./02.html'">안녕하세요쀼삑</td>
+                  <td onclick="javascript:location.href='./02.html'" style="cursor:pointer;">안녕하세요쀼삑</td>
                   <td>유리</td>
                   <td>2018-01-09</td>
                   <td>151</td>
                </tr>
                <tr>
                   <td>1</td>
-                  <td onclick="javascript:location.href='./02.html'">안녕하세요</td>
+                  <td onclick="javascript:location.href='./02.html'" style="cursor:pointer;">안녕하세요</td>
                   <td>민우</td>
                   <td>2018-01-08</td>
                   <td>10</td>
