@@ -5,8 +5,9 @@
 <title></title>
 <link rel="stylesheet"type = "text/css" href="Copy of test1.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <script    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script defer src="/static/fontawesome/fontawesome-all.js"></script>
 <script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <style>
@@ -37,8 +38,6 @@ $(function(){
                      MYPAGE </b></span></a></li>
          <li class="active"><a href="#"><span class="glyphicon glyphicon-cog"><b>
                      SETTING </b></span></a></li>
-         <li><a href="#"><span class="glyphicon glyphicon-earphone"><b>
-                     CONTACT </b></span> </a></li>
       </ul>
 </nav>
 </header>
@@ -55,13 +54,13 @@ $(function(){
           
           </div>
           <ul class="pro">
-            <li class="plan-feature"><i class="fa fa-calendar" aria-hidden="true"></i> 가입일: </li>
-            <li class="plan-feature"><i class="fa fa-line-chart" aria-hidden="true"></i> 회원등급: </li>
-            <li class="plan-feature"><i class="fa fa-comments-o" aria-hidden="true"></i> 게시글: </li>
+            <li class="plan-feature"><i class="far fa-calendar-alt" aria-hidden="true"></i> 가입일: </li>
+            <li class="plan-feature"><i class="fas fa-chart-line" aria-hidden="true"></i> 회원등급: </li>
+            <li class="plan-feature"><i class="far fa-edit" aria-hidden="true"></i> 게시글: </li>
            <div class="row">
                   <button type="button" class="btn btn-default" style="width: 80px;"><i class="fa fa-paw" aria-hidden="true"></i>MyPage</button>
                   <button type="button" class="btn btn-default"
-                     style="background-color: #ffc4d7 ;width: 80px;"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Logout</button>
+                     style="background-color: #ffc4d7 ;width: 80px;"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>Logout</button>
                </div>
                 </ul>
        </div>
@@ -116,89 +115,111 @@ $(function(){
    </nav>
 
    <section id="post">
-		<div class="container">
-		<div class="list">
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th class="title">공지사항</th>
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>연예</td>
-
-					</tr>
-					<tr>
-						<td>에이핑크</td>
-					</tr>
-					<tr>
-						<td>트와이스</td>
-					</tr>
-					<tr>
-						<td>시사</td>
-					</tr>
-					<tr>
-						<td>경제</td>
-					</tr>
-					<tr>
-						<td>문화</td>
-					</tr>
-					<tr>
-						<td>게임</td>
-					</tr>
-					<tr>
-						<td>배틀그라운드</td>
-					</tr>
-				</tbody>
-			</table>
+   <div class="container">
+   
+   <div class="name">
+            <i class="far fa-list-alt" aria-hidden="true"></i> 게시판 관리
+         </div>
+      <div class="list">
+            <table class="table table-hover">
+               <thead>
+                  <tr>
+                     <th class="title">카테고리 전체보기</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><strong>게시판</strong></td>
+                  </tr>
+                  <tr>
+                     <td>일상</td>
+                  </tr>
+                  <tr>
+                     <td>냠냠</td>
+                  </tr>
+                  <tr>
+                     <td><strong>여행</strong></td>
+                  </tr>
+                  <tr>
+                     <td>유럽</td>
+                  </tr>
+                  <tr>
+                     <td>태국</td>
+                  </tr>
+                  <tr>
+                     <td>베트남</td>
+                  </tr>
+                  <tr>
+                     <td>홍콩</td>
+                  </tr>
+                  <tr>
+                     <td>마카오</td>
+                  </tr>
+               </tbody>
+            </table>
 
 
 </div>
 <div class="list1">
-			<table id="yuri">
-				<tr>
-					<td>카테고리 명 공백</td>
-					<td><input type=text name=title size=35></td>
-				</tr>
-				<!--             <tr> -->
-				<!--                <td></td> -->
-				<!--                <td><input type="checkbox" id="cb1" />게시판명 앞에 포스트수표시 <select -->
-				<!--                   name="category"> -->
-				<!--                      <option value="">분류선택</option> -->
-				<!--                      <option value="일반">일반</option> -->
-				<!--                      <option value="일반">공지사항</option> -->
-				<!--                </select></td> -->
-				<!--             </tr> -->
-				<tr>
-					<td>공개설정</td>
-					<td><input type="radio" name="memory" value="1">공개 <input
-						type="radio" name="memory" value="2">비공개<br></td>
-				</tr>
-				<tr>
-					<td>글쓰기 권한</td>
-					<td><select name="category">
-							<option value="">분류선택</option>
-							<option value="일반">나만 쓰는 게시판</option>
-							<option value="일반">공용 게시판</option>
-					</select></td>
-				<tr>
-					<td>카테고리 정렬></td>
-					<td><button id="up">위</button>
-						<button id="down">아래</button>
-						<button id="left">왼쪽</button>
-						<button id="right">오른쪽</button></td>
-				</tr>
-				<tr>
-					<td>카테고리 접기</td>
-					<td><input type="radio" name="show" value="1">펼치기 <input
-						type="radio" name="show" value="2">접기<br></td>
-				</tr>
-			</table>
-		</div>
-		</div>
+         <table id="yuri">
+            <tr>
+               <td>카테고리 명 공백</td>
+               <td><input type=text name=title size=35></td>
+            </tr>
+            <!--             <tr> -->
+            <!--                <td></td> -->
+            <!--                <td><input type="checkbox" id="cb1" />게시판명 앞에 포스트수표시 <select -->
+            <!--                   name="category"> -->
+            <!--                      <option value="">분류선택</option> -->
+            <!--                      <option value="일반">일반</option> -->
+            <!--                      <option value="일반">공지사항</option> -->
+            <!--                </select></td> -->
+            <!--             </tr> -->
+            <tr>
+               <td>공개설정</td>
+               <td><input type="radio" name="memory" value="1">공개 <input
+                  type="radio" name="memory" value="2">비공개<br></td>
+            </tr>
+            <tr>
+               <td>글쓰기 권한</td>
+               <td><select name="category">
+                     <option value="">분류선택</option>
+                     <option value="일반">나만 쓰는 게시판</option>
+                     <option value="일반">공용 게시판</option>
+               </select></td>
+            <tr>
+               <td>카테고리 정렬></td>
+               <td><button id="up">위</button>
+                  <button id="down">아래</button>
+                  <button id="left">왼쪽</button>
+                  <button id="right">오른쪽</button></td>
+            </tr>
+            <tr>
+               <td>카테고리 접기</td>
+               <td><input type="radio" name="show" value="1">펼치기 <input
+                  type="radio" name="show" value="2">접기<br></td>
+            </tr>
+         </table>
+      </div>
+   
+      
+      <div class="form-group">
+            <div class="col-sm-12 text-right">
+               <button class="btn btn-primary" type="submit">
+                  확인<i class="fa fa-check spaceLeft"></i>
+               </button>
+                <button class="btn btn-warning" type="submit">
+              <i class="fas fa-sync-alt"></i> 수정
+                  
+               </button>
+               <button class="btn btn-danger" formaction="../main.html">
+                  삭제<i class="fa fa-times spaceLeft"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      
 
-	</section>
+   </section>
 </body>
 </html>

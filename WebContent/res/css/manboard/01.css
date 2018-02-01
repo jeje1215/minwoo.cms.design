@@ -74,6 +74,7 @@ section#post {
 
 .container {
    padding-right: 150px;
+   padding-top: 10px;
 }
 .part { 
    list-style-type: upper-roman;
@@ -207,14 +208,27 @@ li {
 /* } */
 
 .table{
-	
-	width:40%;
-	
+   
+   width:40%;
+   
 }
 table {
    font-family: HY강B;
    float:left;
+   margin-right:50px;
+
   
+}
+
+table#yuri{
+   margin-top:10px;
+   cellpadding:20px;
+   border-spacing:10px;
+   
+}
+td{
+   
+   padding:10px;
 }
 .table
 
@@ -227,13 +241,12 @@ table {
    background-color: #1689b9;
 }
 
-.btn-primary {
-   background-color: #286BF7;
-   border-radius: 10px;
-   color: wihte;
-   text-decoration: none;
-   border: 1px solid #286BF7;
-}
+/* .btn-primary { */
+
+/*    color: wihte; */
+/*    text-decoration: none; */
+
+/* } */
 
 .pagination {
    display: block;
@@ -318,4 +331,14 @@ div.a {
 
 hr {
    border: 1px solid #777777;
+}
+div.name{
+    font-family: HY강B;
+   
+   
+}
+button{
+   
+    font-family: HY강B;
+   
 }
