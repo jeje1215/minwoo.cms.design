@@ -4,36 +4,42 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <style>
 @import "../res/css/msg/01.css";
-
-
 </style>
 <body>
-<div class="box">
-	<div class="letterpage">
-		<div id="header">쪽지보내세요!</div>
-            <label for="who" class="recipient"> 받는사람</label>
-            <input type = "text" readonly value = "승창 님"/>
-            <hr>
-            
-            <div class="writing_area">
-               <textarea id="writeNote" style="resize:none;" rows="12" cols="65"></textarea>
-            </div>
-            <div class="let">
-            	<button type="button" class="btn btn-info"  style="background-color: #ff80a0; ">
-           		<span class="glyphicon glyphicon-envelope" style="font-family: HY강B;" onclick="javascript:window.close();"> 쪽지보내기</span></button>   
-           	<button type="button"   class="btn btn-info" style="background-color: #ffc0d0">
-           	<span class="glyphicon glyphicon-remove"  onclick="javascript:window.close();"> 취소하기</span></button> 
-          
-	</div>
+	<div class="box">
+		<div class="letterpage">
+			<div id="header">쪽지보내세요!</div>
+			<label for="who" class="recipient"> 받는사람</label> <input type="text"
+				readonly value="승창 님" />
+			<hr>
 
+			<div class="writing_area">
+				<textarea id="writeNote" style="resize: none;" rows="12" cols="64"></textarea>
+			</div>
+			<div class="let">
+				<button type="button" class="btn btn-info"
+					style="background-color: #ff80a0;" onclick="javascript:window.close();">
+					<span class="glyphicon glyphicon-envelope"
+						style="font-family: HY강B;" >
+						쪽지보내기</span>
+				</button>
+				<button type="button" class="btn btn-info"
+					style="background-color: #ffc0d0" onclick="javascript:window.close();">
+					<span class="glyphicon glyphicon-remove"
+					> 취소하기</span>
+				</button>
+			</div>
+		</div>
 	</div>
-</div>
 
 </body>
 </html>
