@@ -1,19 +1,13 @@
 @CHARSET "UTF-8";
-p{
-	font-size:11px;
-	
-	
-}
-footer{
-	
-	margin-top:100px;
-	font-family: HY강B;
-	font-size:11px;
-	
+p {
+	font-size: 11px;
 }
 body {
 	font-family: "HY강B";
 }
+
+/* 프로필 */
+
 .pricing-table .plan {
 	margin-left: 20px;
 	border-radius: 5px;
@@ -21,7 +15,7 @@ body {
 	background-color: #c0d6e4;
 	margin-left: 20px;
 	width: 190px;
-height:300px;
+	height: 300px;
 	font-family: HY강B;
 }
 
@@ -55,21 +49,13 @@ height:300px;
 .pricing-table .plan .plan-name span {
 	font-size: 10px;
 }
-
 .pricing-table .plan ul {
 	list-style: none;
 	border-radius: 0 0 5px 5px;
 }
 
-.plan-feature{
-	font-size:14px;
-}
-
-ul, ol {
-	margin-top: 0;
-		margin-left: 0px;
-	padding-left: 0px;
-	font-size: 11px;
+.plan-feature {
+	font-size: 14px;
 }
 
 .pricing-table .plan ul li.plan-feature {
@@ -81,6 +67,9 @@ ul, ol {
 
 
 
+
+/* 본문입니다 */
+
 section#post {
 	display: table-cell;
 }
@@ -89,21 +78,26 @@ section#post {
 	padding-right: 150px;
 }
 
+
+
+/* 탑메뉴입니다. */
 .navbar-default .navbar-nav>li>a {
 	color: white;
 	font-weight: bold;
 	font-family: HY강B;
+	
 }
 
 .navbar-default {
-
-	background-color:#1077A9;
-	font-size: 15px;
+	background-color: #1077A9;
+	font-size: 16px;
 	font-family: HY강B;
 	margin-left: 180px;
 	margin-right: 180px;
 	margin-bottom: 30px;
 }
+
+/* 옆메뉴 */
 
 nav.aside {
 	display: table-cell;
@@ -119,10 +113,10 @@ form.submenu {
 }
 
 .nav ul {
-	list-style: none;
-	width: 180px;
-	font-size: 1em;
-	padding: 0;
+	list-style: none; 
+ 	width: 180px; 
+ 	font-size: 1em;
+	padding: 0; 
 	font-family: HY강B;
 	display: table-cell;
 }
@@ -165,7 +159,6 @@ li {
 }
 
 #accordian h3:hover {
-	
 	width: 200px;
 }
 /* 아이콘폰트 스타일 */
@@ -217,6 +210,8 @@ li {
 /* } */
 
 
+
+
 table {
 	font-family: HY강B;
 }
@@ -225,27 +220,27 @@ table {
 	text-align: center;
 }
 
-.btn-primary:hover {
-	border: 1px solid #1689b9;
-	background-color: #1689b9;
-}
+/* 등록취소 버튼 css */
 
 .btn-primary {
-	
 	color: wihte;
 	text-decoration: none;
 	border: 1px solid #286BF7;
+	font-family: HY강B;ㄴ
 }
+/* 페이지 css */
 
 .pagination {
 	display: block;
 	test-align: center;
+	font-family: HY강B;
 }
 
 .pagination>li>a {
 	float: none;
 }
 
+/* 검색/분류 버튼입니다. */
 .d1 input {
 	width: 200px;
 	height: 30px;
@@ -257,8 +252,8 @@ table {
 }
 
 .d1 button {
- 	position:absolute;
-	margin-left:980px;
+	position: absolute;
+	margin-left: 980px;
 	width: 30px;
 	height: 30px;
 	border: none;
@@ -275,85 +270,47 @@ table {
 }
 
 select {
-	
 	font-family: HY강B;
 	border: 2px solid #007DC1;
 	border-radius: 5px;
 	width: 100px;
 	height: 30px;
-	float:right;
-	
-	
+	float: right;
 }
-
-div.log1 {
-	font-family: HY나무B;
-}
-
-div.userif {
-	font-family: HY나무B;
-	border: 1px solid #bbbbbb;
-	border-radius: 10px;
-	width: 180px;
-	margin-top: auto;
-	margin-left: 10px;
-	margin-top: 25px;
-}
-
-div.user {
-	font-family: HY강B;
-	text-align: center;
-	border: 2px solid #007DC1;
-	border-radius: 5px;
-	color: #007DC1;
-	margin-bottom: 30px;
-	margin-top: -5px;
-}
-
-div.userf {
-	font-family: HY강B;
-	line-height: 1.8em;
-	border-top: 50px;
-}
-
-div.a {
-	padding-left: 10px;
-}
-
-hr {
-	border: 1px solid #777777;
-}
-.btn-primary{
-
-	font-family: HY강B;
-	
-}
-
-.btn-info{
+/* 로그인 버튼  */
+.btn-info {
 	height: 30px;
-	background-color:#FFDADA;
-	border:1px solid #003366;
+	background-color: #FFDADA;
+	border: 1px solid #003366;
 	font-family: HY강B;
-	color:black;
-
-}
-.name{
-	padding-left:10px;
-	font-family: HY강B;
-
-	
-}
-.del{
-	border-radius:5px;
-	width:75px;
-	height:35px;
-	float:right;
-	font-family: HY강B;
-	font-size:14px;
-	color:white;
-	border:1px solid #cccccc;
-	background-color:#007DC1;
-	
-	
+	color: black;
 }
 
+.del {
+	border-radius: 5px;
+	width: 75px;
+	height: 35px;
+	float: right;
+	font-family: HY강B;
+	font-size: 14px;
+	color: white;
+	border: 1px solid #cccccc;
+	background-color: #007DC1;
+}
+
+
+/* 공지사항,회원관리,메시지함관리 글씨 css */
+.name {
+	padding-left: 10px;
+	font-family: HY강B;
+}
+
+
+
+
+/* 바닥글 */
+footer {
+	margin-top: 100px;
+	font-family: HY강B;
+	font-size: 11px;
+}
