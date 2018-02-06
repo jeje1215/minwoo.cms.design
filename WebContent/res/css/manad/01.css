@@ -370,3 +370,6 @@ footer{
 	
 }
 
+
+input[type=date] { height:25px; }
+
